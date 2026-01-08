@@ -5,7 +5,7 @@ for(let i = str.length-1; i>=0; i--){
     reversed = reversed + str[i]
 }
 
-if(str == reversed){
+if(str === reversed){
     console.log(true);   
 }
 else{
