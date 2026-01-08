@@ -1,9 +1,12 @@
-const str = "hello";
+function reverseString(str) {
+  let reversed = "";
 
-let reversed = "";
-
-for(let i= str.length -1; i>=0; i--){
-    reverse = reverse + str[i]
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed = reversed + str[i];
+  }
+  return reversed;
 }
 
-console.log(reverse)
+const str = "hello";
+const reversed = reverseString(str);
+console.log(reversed);

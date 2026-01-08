@@ -1,11 +1,13 @@
-const arr = [1,2,3,4,5,6];
+function findEven(arr) {
+  const evenArr = [];
 
-const evenArr = [];
-
-for(let i=0; i< arr.length; i++){
-    if(arr[i]%2===0){
-        evenArr.push(arr[i]);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evenArr.push(arr[i]);
     }
+  }
+  return evenArr;
 }
 
-console.log(evenArr);
+const arr = [1, 2, 3, 4, 5, 6];
+console.log(findEven(arr));
